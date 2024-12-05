@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API = axios.create({ baseURL: 'https://rbac-ui-bay.vercel.app/' ,  });
+const API = axios.create({ baseURL: 'http://localhost:5000' });
 
 export const getUsers = () => API.get('/users');
 export const addUser = (user) => API.post('/users', user);
